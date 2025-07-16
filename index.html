@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My Library</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>📚 My Library</h1>
-  
-  <button id="new-book-btn">+ New Book</button>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>📚 My Library</h1>
 
-  <dialog id="book-dialog">
-    <form id="book-form" method="dialog">
-      <h2>Add New Book</h2>
-      <input type="text" id="title" placeholder="Title" required />
-      <input type="text" id="author" placeholder="Author" required />
-      <input type="number" id="pages" placeholder="Pages" required />
-      <label>
-        <input type="checkbox" id="read" />
-        Mark as Read
-      </label>
-      <br /><br />
-      <button type="submit">Add Book</button>
-      <button type="button" id="cancel-btn">Cancel</button>
-    </form>
-  </dialog>
+    <button id="new-book-btn">+ New Book</button>
 
-  <div id="book-list"></div>
+    <dialog id="book-dialog">
+      <form id="book-form" method="dialog">
+        <h2>Add New Book</h2>
+        <input type="text" id="title" placeholder="Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="number" id="pages" placeholder="Pages" required />
+        <label>
+          <input type="checkbox" id="read" />
+          Mark as Read
+        </label>
+        <br /><br />
+        <button type="submit" id="add-book-btn">Add Book</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+      </form>
+    </dialog>
 
-  <script src="script.js"></script>
-</body>
+    <div id="book-list"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
